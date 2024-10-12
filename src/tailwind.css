@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General page layout */
+body {
+  @apply h-screen w-screen bg-gray-800 font-mono;
+}
+
+.container {
+  @apply flex h-full;
+}
+
+/* Left pinned task section */
+.pinned-tasks {
+  @apply w-1/4 bg-gray-50 border-r border-gray-200 p-4 overflow-y-auto;
+}
+
+/* Right task section */
+.all-tasks {
+  @apply w-1/4 bg-gray-50 border-l border-gray-200 p-4 overflow-y-auto;
+}
+
+/* Center task creation form */
+.task-form {
+  @apply w-1/2 p-8 bg-white shadow-lg rounded-lg mx-auto my-8;
+}
+
+/* Input fields and textarea */
+input,
+textarea {
+  @apply w-full border border-gray-300 rounded-md p-2 mb-4 focus:ring-2 focus:ring-blue-400 focus:outline-none;
+}
+
+/* Buttons */
+button {
+  @apply bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition;
+}
+
+/* Task Colors based on deadline */
+.task-default {
+  @apply bg-green-200 p-4 rounded-md mb-4;
+}
+
+.task-yellow {
+  @apply bg-yellow-200 p-4 rounded-md mb-4;
+}
+
+.task-red {
+  @apply bg-red-200 p-4 rounded-md mb-4;
+}
+
+.task-completed {
+  @apply bg-gray-400 p-4 rounded-md mb-4 text-white line-through;
+}
+
+/* Task titles */
+.task-title {
+  @apply text-xl font-bold mb-2;
+}
+
+/* Task descriptions */
+.task-desc {
+  @apply text-gray-700;
+}
+
+/* Task deadline text */
+.task-date {
+  @apply text-sm text-gray-500;
+}

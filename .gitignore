@@ -1,0 +1,43 @@
+# macOS specific files
+.DS_Store
+
+# Node modules
+/node_modules
+
+# Build directory
+/build
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Package lock files
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Tailwind cache
+.tailwind/
+
+# PostCSS cache
+postcss.config.js
+
+# Public folder content
+/public/*.html
+/public/static/
+
+# IntelliJ IDEA/WebStorm project files
+.idea/
+
+# VS Code specific
+.vscode/
+
+# Ignore local testing environment configurations
+.local/
