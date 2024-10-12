@@ -29,10 +29,6 @@ yarn.lock
 # PostCSS cache
 postcss.config.js
 
-# Public folder content
-/public/*.html
-/public/static/
-
 # IntelliJ IDEA/WebStorm project files
 .idea/
 
