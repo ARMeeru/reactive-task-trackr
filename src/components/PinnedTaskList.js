@@ -22,13 +22,13 @@ const PinnedTaskList = ({ tasks, onDelete, onTogglePin }) => {
           <p className="task-date">Deadline: {task.deadline}</p>
           <button
             onClick={() => onTogglePin(task.id)}
-            className="text-blue-500 mt-2"
+            className="text-white mt-2"
           >
             Unpin
           </button>
           <button
             onClick={() => onDelete(task.id)}
-            className="text-red-500 ml-4 mt-2"
+            className="text-white ml-4 mt-2"
           >
             Delete
           </button>
