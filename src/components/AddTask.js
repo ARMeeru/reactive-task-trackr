@@ -50,7 +50,9 @@ const AddTask = ({ onAdd }) => {
         />
       </div>
       <div>
+        <label htmlFor="date">Date</label>
         <input
+          id="date"
           type="date"
           value={deadline}
           onChange={(e) => setDeadline(e.target.value)}

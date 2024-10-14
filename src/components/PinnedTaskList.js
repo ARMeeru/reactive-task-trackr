@@ -16,7 +16,11 @@ const PinnedTaskList = ({ tasks, onDelete, onTogglePin }) => {
     <div className="pinned-tasks w-2/6 bg-gray-50 border-r border-gray-200 p-4 overflow-y-auto">
       <h2 className="text-xl font-semibold mb-4 text-center">Pinned Tasks</h2>
       {tasks.map((task) => (
-        <div key={task.id} className={getTaskClass(task)}>
+        <div
+          key={task.id}
+          className={`task-item ${getTaskClass(task)}`}
+          data-testid={`pinned-task-item-${task.id}`}
+        >
           <h3 className="task-title">{task.title}</h3>
           <p className="task-desc">{task.description}</p>
           <p className="task-date">Deadline: {task.deadline}</p>
