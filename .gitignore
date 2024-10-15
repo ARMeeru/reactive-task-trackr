@@ -37,3 +37,6 @@ postcss.config.js
 
 # Ignore local testing environment configurations
 .local/
+
+# Test Coverage
+/coverage
